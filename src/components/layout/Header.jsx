@@ -1,11 +1,13 @@
 import Nav from "./Nav";
-import Logo from "./Logo";
-import Button from "./Button";
+import Logo from "../smallComponents/Logo";
+import Button from "../smallComponents/Button";
 export default function Header (){
  return(
-     <header className="h-[10%] bg-white shadow-xl" >
-        <Logo taille='h-[65px]'/>
-        <Button color='bg-green-700'  content="Faire un don"/>
+     <header className="h-[10%]  bg-white shadow-xl flex justify-center items-center p-4" >
+        <div className="border-blue-800 flex justify-between w-[90%]">
+        <Logo taille='h-[55px] w-[55px]'/>
+        <Nav/>
+        </div>
      </header>
  );
 }

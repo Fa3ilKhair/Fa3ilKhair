@@ -1,11 +1,11 @@
 import Header from "../components/layout/Header";
-import Main from "../components/layout/Main";
-export default function Index() {
+import Footer from "../components/layout/Footer";
 
-    return(
-        <>
-          <Header/>
-          <Main/>
-        </>
-    );
+export default function Index() {
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 }

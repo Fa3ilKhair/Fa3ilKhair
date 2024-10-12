@@ -1,5 +1,5 @@
 export default function Button({arrow,content,color}){
     return(
-        <button className={`${color} h-[40px] rounded-sm w-[150px]  text-white font-thin`}  >{content}</button>
+        <button className={`${color} px-7 py-3  text-white font-bold rounded hover:bg-[#409443]`}  >{content}</button>
     );
 }

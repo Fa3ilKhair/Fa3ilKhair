@@ -1,16 +1,29 @@
 import Button from "../smallComponents/Button";
-import Link from "../smallComponents/Link";
-export default function Nav(){
-    return(
-        <nav className="flex  border-green-600 w-[60%] ">
-             <ul className="flex justify-evenly items-center  w-[100%]">
-                <li><Link content="Acceuil" route="/"/></li>
-                <li><Link content="Projets" route="/projets"/></li>
-                <li><Link content="Galerie" route="/gelerie"/></li>
-                <li><Link content="Contactez-nous" route="/"/></li>
-                <li><Link content="Qui sommes-nous?" route="/"/></li>
-                <li><Button content='Faire un Don' color='bg-green-600' /></li>
-            </ul>
-        </nav>
-    );
+import Tag from "../smallComponents/Tag";
+
+export default function Nav() {
+  return (
+    <nav className="flex w-[60%] ">
+      <ul className="flex justify-evenly items-center  w-[100%]">
+        <li>
+          <Tag content="Acceuil" route="/Fa3ilKhair" color={"text-[#4D4D4D]"} />
+        </li>
+        <li>
+          <Tag content="Projets" route="/FailKhair/projets" color={"text-[#4D4D4D]"} />
+        </li>
+        <li>
+          <Tag content="Galerie" route="/FailKhair/gelerie" color={"text-[#4D4D4D]"} />
+        </li>
+        <li>
+          <Tag content="Contactez-nous" route="/FailKhair" color={"text-[#4D4D4D]"} />
+        </li>
+        <li>
+          <Tag content="Qui sommes-nous?" route="/FailKhair" color={"text-[#4D4D4D]"} />
+        </li>
+        <li>
+          <Button content="Faites un Don" color="bg-[#4caf4f]" />
+        </li>
+      </ul>
+    </nav>
+  );
 }

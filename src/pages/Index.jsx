@@ -1,6 +1,9 @@
-export default function Index() {
+import Footer from "../components/layout/Footer";
 
-    return(
-        <>Index Page</>
-    );
+export default function Index() {
+  return (
+    <>
+      <Footer />
+    </>
+  );
 }

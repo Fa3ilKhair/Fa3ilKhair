@@ -3,7 +3,7 @@ import FooterTwo from "./FooterTwo";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="w-full">
       <FooterOne />
       <FooterTwo />
     </footer>

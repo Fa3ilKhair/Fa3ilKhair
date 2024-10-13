@@ -3,7 +3,7 @@ export default function PresentationSection() {
   return (
     <section className="p-24 bg-white flex justify-center w-full gap-24">
       <div className="h-96">
-        <img className="h-full rounded-md" src="/Fa3ilKhair/assets/quiSommesNous.jpg" alt="assosiation.png" />
+        <img className="h-full rounded-md" src="/Fa3ilKhair/assets/media/quiSommesNous.jpg" alt="assosiation.png" />
       </div>
       <div className="flex flex-col justify-evenly items-start w-1/2">
         <h1 className="font-bold text-[2.5rem]">Qui sommes-nous?</h1>

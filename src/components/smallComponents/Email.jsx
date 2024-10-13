@@ -11,7 +11,7 @@ export default function Email() {
         <input
           type="email"
           id="email"
-          className="block w-full p-4 ps-10 text-[1rem] text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-[#367e38] focus:border-[#367e38]"
+          className="outline-none block w-full p-4 ps-10 text-[1rem] text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-[#367e38] focus:border-[#367e38]"
           placeholder="E-mail"
           required
         />

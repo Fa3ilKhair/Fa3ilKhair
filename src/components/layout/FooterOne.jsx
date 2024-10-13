@@ -8,7 +8,7 @@ export default function FooterOne() {
         <br />
         offrez de l'espoir
       </h1>
-      <Button content="Faites un Don" color="bg-[#4caf4f]" arrow={true} />
+      <Button content="Faites un Don" color="bg-[#4caf4f]" />
     </div>
   );
 }

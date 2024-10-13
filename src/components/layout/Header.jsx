@@ -3,9 +3,9 @@ import Logo from "../smallComponents/Logo";
 
 export default function Header() {
   return (
-    <header className="h-[10%]  bg-white shadow-xl flex justify-center items-center p-4">
-      <div className="border-blue-800 flex justify-between w-[90%]">
-        <Logo taille="h-[55px] w-[55px]" />
+    <header className="sticky top-0 bg-white shadow-xl flex justify-center items-center py-4 px-6 w-full">
+      <div className="border-blue-800 flex justify-between w-full px-6">
+        <Logo taille="h-16" />
         <Nav />
       </div>
     </header>

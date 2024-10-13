@@ -1,7 +1,7 @@
 import Button from "../smallComponents/Button";
 export default function PresentationSection(){
     return(
-        <section className=" px-20 py-20 bg-white flex justify">
+        <section className=" px-20 py-18 bg-white flex justify">
             <img className="h-96 pr-24" src="/Fa3ilKhair/assets/presentationImg.png" alt="assosiation.png" />
             <div className="flex flex-col justify-evenly items-start ">
                 <h1 className="font-bold text-4xl">Qui sommes-nous?</h1>

@@ -3,11 +3,11 @@ export default function PresentationSection() {
   return (
     <section className="p-24 bg-white flex justify-center w-full gap-24">
       <div className="h-96">
-        <img className="h-full" src="/Fa3ilKhair/assets/quiSommesNous.jpg" alt="assosiation.png" />
+        <img className="h-full rounded-md" src="/Fa3ilKhair/assets/quiSommesNous.jpg" alt="assosiation.png" />
       </div>
       <div className="flex flex-col justify-evenly items-start w-1/2">
-        <h1 className="font-bold text-4xl">Qui sommes-nous?</h1>
-        <p className="text-xl text-justify">
+        <h1 className="font-bold text-[2.5rem]">Qui sommes-nous?</h1>
+        <p className="text-[1.1rem] text-justify font-light font-italic">
           Chaque jour, notre pays fait un nouveau pas vers un avenir meilleur. Nous, association Mubadarat Fail Khir
           Rabat, affirmons que l’engagement associatif est une des clés de ce mouvement. Face aux différents défis, nous
           prenons depuis 2012, notre part à la construction d’un futur marocain plus solidaire. C’est l’ambition qui

@@ -33,9 +33,9 @@ const ContactItem = ({ label, icon }) => (
 // Main Footer Component
 export default function FooterTwo() {
   return (
-    <div className="h-96 bg-[#263238] text-white flex justify-between px-32 py-12 w-full">
+    <div className="bg-[#263238] text-white flex justify-between px-32 py-12 w-full phone:flex-col-reverse phone:gap-12">
       {/* Left Section */}
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col gap-6">
         <Logo taille="w-24" />
         <p className="text-start text-[1rem]">
           Copyright © 2024 Fail Khair.
@@ -50,29 +50,30 @@ export default function FooterTwo() {
       </div>
 
       {/* Middle Section */}
-      <div className="flex gap-12">
-        {/* Information Links */}
-        <FooterSection title="Information">
-          <ul className="flex flex-col gap-3 ps-4">
-            <FooterLink content="Acceuil" route="/Fa3ilKhair" color="text-white" />
-            <FooterLink content="Projects" route="/Fa3ilKhair/projects" color="text-white" />
-            <FooterLink content="Galerie" route="/Fa3ilKhair/galerie" color="text-white" />
-            <FooterLink content="Qui sommes-nous ?" route="/Fa3ilKhair" color="text-white" />
-            <FooterLink content="Faites un Don" route="/Fa3ilKhair" color="text-white" />
-          </ul>
-        </FooterSection>
+      <div className="flex gap-12 phone:flex-col phone:items-start">
+        <div className="flex justify-between gap-12 phone:w-full  phone:border-b phone:pb-10">
+          {/* Information Links */}
+          <FooterSection title="Information">
+            <ul className="flex flex-col gap-3 ps-4">
+              <FooterLink content="Acceuil" route="/Fa3ilKhair" color="text-white" />
+              <FooterLink content="Projects" route="/Fa3ilKhair/projects" color="text-white" />
+              <FooterLink content="Galerie" route="/Fa3ilKhair/galerie" color="text-white" />
+              <FooterLink content="Qui sommes-nous ?" route="/Fa3ilKhair" color="text-white" />
+              <FooterLink content="Faites un Don" route="/Fa3ilKhair" color="text-white" />
+            </ul>
+          </FooterSection>
 
-        {/* Contact Links */}
-        <FooterSection title="Contactez-nous">
-          <ul className="flex flex-col gap-3 ps-4">
-            <ContactItem label="E-mail" icon={faUpRightFromSquare} />
-            <ContactItem label="Téléphone" icon={faUpRightFromSquare} />
-            <ContactItem label="Adresse" icon={faUpRightFromSquare} />
-            <ContactItem label="Copy RIB" icon={faCopy} />
-            <ContactItem label="Copy code swift" icon={faCopy} />
-          </ul>
-        </FooterSection>
-
+          {/* Contact Links */}
+          <FooterSection title="Contactez-nous">
+            <ul className="flex flex-col gap-3 ps-4">
+              <ContactItem label="E-mail" icon={faUpRightFromSquare} />
+              <ContactItem label="Téléphone" icon={faUpRightFromSquare} />
+              <ContactItem label="Adresse" icon={faUpRightFromSquare} />
+              <ContactItem label="Copy RIB" icon={faCopy} />
+              <ContactItem label="Copy code swift" icon={faCopy} />
+            </ul>
+          </FooterSection>
+        </div>
         {/* Stay Updated */}
         <FooterSection title="Restez à jour">
           <Email />

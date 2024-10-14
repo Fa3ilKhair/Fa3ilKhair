@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        phone: { max: "640px" },
+        desktop: { min: "1280px" },
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },

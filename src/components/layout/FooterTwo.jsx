@@ -90,8 +90,8 @@ export default function FooterTwo() {
           {/* Contact Links */}
           <FooterSection title="Contactez-nous">
             <ul className="flex flex-col gap-3 ps-4">
-              <ContactItem label="E-mail" icon={faUpRightFromSquare} fn={() => (window.location.href = "mailto:khalidmarzoug9@gmail.com")} />
-              <ContactItem label="Téléphone" icon={faUpRightFromSquare} fn={() => (window.location.href = `tel:+212611517876`)} />
+              <ContactItem label="E-mail" icon={faUpRightFromSquare} fn={() => (window.location.href = "mailto:failkhir.rabat@gmail.com")} />
+              <ContactItem label="Téléphone" icon={faUpRightFromSquare} fn={() => (window.location.href = `tel:+212611562636`)} />
               <ContactItem label="Adresse" icon={faUpRightFromSquare} fn={() => openGoogleMaps(34.02672112637983, -6.842232721131984)} />
               <ContactItem
                 label="RIB"

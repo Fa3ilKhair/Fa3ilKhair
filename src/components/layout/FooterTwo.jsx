@@ -75,7 +75,7 @@ export default function FooterTwo() {
 
       {/* Middle Section */}
       <div className="flex gap-12 phone:flex-col phone:items-start">
-        <div className="flex justify-between gap-12 phone:w-full  phone:border-b phone:pb-10">
+        <div className="flex flex-row-reverse justify-between gap-12 phone:w-full  phone:border-b phone:pb-10">
           {/* Information Links */}
           <FooterSection title="Information">
             <ul className="flex flex-col gap-3 ps-4">

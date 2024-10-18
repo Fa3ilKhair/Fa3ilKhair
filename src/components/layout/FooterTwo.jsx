@@ -39,10 +39,11 @@ const FooterLink = ({ content, route, color }) => <Tag content={content} route={
 const ContactItem = ({ label, icon, fn, message }) => {
   const [showNotification, setShowNotification] = useState(false);
 
+  // Hide notification after 3 seconds
   const handleClick = () => {
     fn();
     setShowNotification(true);
-    setTimeout(() => setShowNotification(false), 3000); // Hide notification after 3 seconds
+    setTimeout(() => setShowNotification(false), 3000);
   };
 
   return (

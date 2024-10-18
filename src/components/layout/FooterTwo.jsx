@@ -17,14 +17,21 @@ const FooterSection = ({ title, children }) => (
   </div>
 );
 
+// open google maps :
+const openGoogleMaps = (latitude, longitude) => {
+  const googleMapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}&z=15`;
+
+  window.open(googleMapsUrl, '_blank');
+};
+
 // Reusable Component for Footer Links
 const FooterLink = ({ content, route, color }) => <Tag content={content} route={route} color={color} />;
 
 // Reusable Component for Contact Items
-const ContactItem = ({ label, icon }) => (
+const ContactItem = ({ label, icon, fn }) => (
   <li className="flex items-center justify-between">
     <span className="text-white font-semibold underline-offset-3 text-[1.1rem]">{label}</span>
-    <a type="button" className="cursor-pointer text-[1.1rem]" aria-label={`Action for ${label}`}>
+    <a type="button" className="cursor-pointer text-[1.1rem]" aria-label={`Action for ${label}`} onClick={fn}>
       <Icon icon={icon} />
     </a>
   </li>
@@ -43,9 +50,9 @@ export default function FooterTwo() {
           All rights reserved.
         </p>
         <div className="flex gap-2">
-          <SocialMediaIcon icon={faFacebookF} />
-          <SocialMediaIcon icon={faInstagram} />
-          <SocialMediaIcon icon={faLinkedinIn} />
+          <SocialMediaIcon icon={faFacebookF} link={"https://www.facebook.com/Fa3ilkhirRabat"} />
+          <SocialMediaIcon icon={faInstagram} link={"https://www.instagram.com/fa3ilkhirrabat/"} />
+          <SocialMediaIcon icon={faLinkedinIn} link={"https://www.linkedin.com/in/fa3ilkhirrabat/"} />
         </div>
       </div>
 
@@ -66,11 +73,11 @@ export default function FooterTwo() {
           {/* Contact Links */}
           <FooterSection title="Contactez-nous">
             <ul className="flex flex-col gap-3 ps-4">
-              <ContactItem label="E-mail" icon={faUpRightFromSquare} />
-              <ContactItem label="Téléphone" icon={faUpRightFromSquare} />
-              <ContactItem label="Adresse" icon={faUpRightFromSquare} />
-              <ContactItem label="Copy RIB" icon={faCopy} />
-              <ContactItem label="Copy code swift" icon={faCopy} />
+              <ContactItem label="E-mail" icon={faUpRightFromSquare} fn={()=>window.location.href = "mailto:khalidmarzoug9@gmail.com"} />
+              <ContactItem label="Téléphone" icon={faUpRightFromSquare} fn={()=>window.location.href = `tel:+212611517876`} />
+              <ContactItem label="Adresse" icon={faUpRightFromSquare} fn={()=>openGoogleMaps(34.02672112637983, -6.842232721131984)} />
+              <ContactItem label="RIB" icon={faCopy} fn={()=>navigator.clipboard.writeText("350810000000000872218644")} />
+              <ContactItem label="Code Swift" icon={faCopy} fn={()=>navigator.clipboard.writeText("BIG ABBMMAMC")} />
             </ul>
           </FooterSection>
         </div>

@@ -4,7 +4,7 @@ import Icon from "./Icon";
 export default function Email() {
   return (
     <div className="w-96">
-      <div className="relative">
+      <div className="relative mb-2">
         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none text-[1.4rem]">
           <Icon icon={faEnvelope} color="grey" />
         </div>
@@ -22,6 +22,9 @@ export default function Email() {
           <Icon icon={faPaperPlane} />
         </button>
       </div>
+      <p>
+        Restez informé de nos nouvelles activités ! <br /> Et ne manquez aucun événement !
+      </p>
     </div>
   );
 }

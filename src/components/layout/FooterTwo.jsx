@@ -11,17 +11,13 @@ import SocialMediaIcon from "../smallComponents/SocialMediaIcon";
 const Notification = ({ message, show }) => {
   if (!show) return null;
 
-  return (
-    <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white py-2 px-4 rounded shadow-md z-50">
-      {message}
-    </div>
-  );
+  return <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white py-2 px-4 rounded shadow-md z-50">{message}</div>;
 };
 
 // open google maps :
 const openGoogleMaps = (latitude, longitude) => {
   const googleMapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}&z=15`;
-  window.open(googleMapsUrl, '_blank');
+  window.open(googleMapsUrl, "_blank");
 };
 
 // Footer Section
@@ -61,7 +57,7 @@ const ContactItem = ({ label, icon, fn, message }) => {
 // Main Footer Component
 export default function FooterTwo() {
   return (
-    <div className="bg-[#263238] text-white flex justify-between px-32 py-12 w-full phone:flex-col-reverse phone:gap-12">
+    <div className="bg-[#263238] text-white flex justify-between px-32 phone:px-12 py-12 w-full phone:flex-col-reverse phone:gap-12">
       {/* Left Section */}
       <div className="flex flex-col gap-6">
         <Logo taille="w-24" />
@@ -84,7 +80,7 @@ export default function FooterTwo() {
           <FooterSection title="Information">
             <ul className="flex flex-col gap-3 ps-4">
               <FooterLink content="Acceuil" route="/Fa3ilKhair" color="text-white" />
-              <FooterLink content="Projects" route="/Fa3ilKhair/projects" color="text-white" />
+              <FooterLink content="Projets" route="/Fa3ilKhair/projets" color="text-white" />
               <FooterLink content="Galerie" route="/Fa3ilKhair/galerie" color="text-white" />
               <FooterLink content="Qui sommes-nous ?" route="/Fa3ilKhair" color="text-white" />
               <FooterLink content="Faites un Don" route="/Fa3ilKhair" color="text-white" />
@@ -94,11 +90,21 @@ export default function FooterTwo() {
           {/* Contact Links */}
           <FooterSection title="Contactez-nous">
             <ul className="flex flex-col gap-3 ps-4">
-              <ContactItem label="E-mail" icon={faUpRightFromSquare} fn={()=>window.location.href = "mailto:khalidmarzoug9@gmail.com"} />
-              <ContactItem label="Téléphone" icon={faUpRightFromSquare} fn={()=>window.location.href = `tel:+212611517876`} />
-              <ContactItem label="Adresse" icon={faUpRightFromSquare} fn={()=>openGoogleMaps(34.02672112637983, -6.842232721131984)} />
-              <ContactItem label="RIB" icon={faCopy} fn={()=>navigator.clipboard.writeText("350810000000000872218644")} message="RIB copié dans le presse-papiers !" />
-              <ContactItem label="Code Swift" icon={faCopy} fn={()=>navigator.clipboard.writeText("BIG ABBMMAMC")} message="Code Swift copié dans le presse-papiers !" />
+              <ContactItem label="E-mail" icon={faUpRightFromSquare} fn={() => (window.location.href = "mailto:khalidmarzoug9@gmail.com")} />
+              <ContactItem label="Téléphone" icon={faUpRightFromSquare} fn={() => (window.location.href = `tel:+212611517876`)} />
+              <ContactItem label="Adresse" icon={faUpRightFromSquare} fn={() => openGoogleMaps(34.02672112637983, -6.842232721131984)} />
+              <ContactItem
+                label="RIB"
+                icon={faCopy}
+                fn={() => navigator.clipboard.writeText("350810000000000872218644")}
+                message="RIB copié dans le presse-papiers !"
+              />
+              <ContactItem
+                label="Code Swift"
+                icon={faCopy}
+                fn={() => navigator.clipboard.writeText("BIG ABBMMAMC")}
+                message="Code Swift copié dans le presse-papiers !"
+              />
             </ul>
           </FooterSection>
         </div>

@@ -1,8 +1,7 @@
 import Index from "../pages/Index";
-import Projects from "../pages/Projects";
-import Galerie from "../pages/Galerie";
 import NotFoundPage from "../pages/NotFoundPage";
 import { createBrowserRouter } from "react-router-dom";
+import MaintenancePage from "../pages/MaintenancePage";
 
 // Define the routes
 const router = createBrowserRouter([
@@ -11,12 +10,12 @@ const router = createBrowserRouter([
     element: <Index />,
   },
   {
-    path: "/Fa3ilKhair/projects",
-    element: <Projects />,
+    path: "/Fa3ilKhair/projets",
+    element: <MaintenancePage />,
   },
   {
     path: "/Fa3ilKhair/galerie",
-    element: <Galerie />,
+    element: <MaintenancePage />,
   },
   {
     path: "*",

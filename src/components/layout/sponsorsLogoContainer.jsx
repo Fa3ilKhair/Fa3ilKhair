@@ -1,9 +1,9 @@
 export default function SponsorsLogosContainer() {
     return (
         <div className="flex flex-col gap-10 w-full">
-            <div className="flex overflow-hidden space-x-16 group">
+            <div className="flex overflow-hidden space-x-16 phone:space-x-5 group">
                 {/* First loop */}
-                <div className="flex space-x-16 animate-loop-scroll group-hover:paused">
+                <div className="flex space-x-16 phone:space-x-5 animate-loop-scroll group-hover:paused">
                     <a href="#" target="_blank">
                         <img loading="lazy" src="/Fa3ilKhair/assets/sponsorsLogos/sitel.png" className="max-w-none h-6" alt="Sitel" />
                     </a>
@@ -49,7 +49,7 @@ export default function SponsorsLogosContainer() {
                 </div>
         
                 {/* Second loop (hidden aria) */}
-                <div className="flex space-x-16 animate-loop-scroll group-hover:paused" aria-hidden="true">
+                <div className="flex space-x-16 phone:space-x-5 animate-loop-scroll group-hover:paused" aria-hidden="true">
                     <a href="#" target="_blank">
                         <img loading="lazy" src="/Fa3ilKhair/assets/sponsorsLogos/sitel.png" className="max-w-none h-6" alt="Sitel" />
                     </a>
@@ -95,9 +95,9 @@ export default function SponsorsLogosContainer() {
                 </div>
             </div>
             {/* group 2 */}
-            <div className="flex overflow-hidden space-x-16 group">
+            <div className="flex overflow-hidden space-x-16 phone:space-x-5 group">
                 {/* First loop */}
-                <div className="flex space-x-16 animate-loop-scroll-right group-hover:paused">
+                <div className="flex space-x-16 phone:space-x-5 animate-loop-scroll-right group-hover:paused">
                     <a href="#" target="_blank">
                         <img loading="lazy" src="/Fa3ilKhair/assets/sponsorsLogos/2MRadio.png" className="max-w-none h-6" alt="2M Radio" />
                     </a>
@@ -143,7 +143,7 @@ export default function SponsorsLogosContainer() {
                 </div>
         
                 {/* Second loop (hidden aria) */}
-                <div className="flex space-x-16 animate-loop-scroll-right group-hover:paused" aria-hidden="true">
+                <div className="flex space-x-16 phone:space-x-5 animate-loop-scroll-right group-hover:paused" aria-hidden="true">
                     <a href="#" target="_blank">
                         <img loading="lazy" src="/Fa3ilKhair/assets/sponsorsLogos/2MRadio.png" className="max-w-none h-6" alt="2M Radio" />
                     </a>

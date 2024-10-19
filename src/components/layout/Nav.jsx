@@ -14,15 +14,19 @@ export default function Nav() {
 
   const handlePageClick = (page, e) => {
     if (page === "Contactez-nous") {
-      e.preventDefault(); // Prevent the default link behavior
-      // Scroll to footer or specific section
-      const footer = document.getElementById("footer"); // Make sure the footer has this id
+      e.preventDefault();
+      const footer = document.getElementById("footer");
       if (footer) {
-        footer.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to footer
+        footer.scrollIntoView({ behavior: "smooth" }); // scroll to footer
+      }
+    } else if (page === "Qui sommes-nous?") {
+      const quiSommesNous = document.getElementById("quiSommesNous");
+      if (quiSommesNous) {
+        quiSommesNous.scrollIntoView({ behavior: "smooth" });
       }
     } else {
       setActivePage(page);
-      toggleMenu(); // Close menu after selecting a page
+      toggleMenu(); // Close menu
     }
   };
 

@@ -2,7 +2,7 @@ import Button from "../smallComponents/Button";
 
 export default function PresentationSection() {
   return (
-    <section className="p-24 bg-white flex justify-center w-full gap-24">
+    <section className="p-24 bg-white flex justify-center w-full gap-24" id="quiSommesNous">
       <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
         <div className="w-full h-64 lg:w-[70%] lg:h-auto">
           <img

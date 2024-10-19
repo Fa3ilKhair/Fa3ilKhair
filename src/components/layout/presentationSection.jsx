@@ -7,7 +7,7 @@ export default function PresentationSection() {
         <div className="w-full h-64 lg:w-[70%] lg:h-auto">
           <img
             className="h-full w-full object-cover"
-            src="/Fa3ilKhair/assets/media/groupImage.jpeg"
+            src="/Fa3ilKhair/assets/media/groupImage.jpg"
             alt="Image representing our association's mission"
           />
         </div>

@@ -8,9 +8,9 @@ export default function Main() {
   return (
     <main className="w-full">
       <Hero />
-      <SponsorsSection />
-      <PprincipaleProject />
       <PresentationSection />
+      <PprincipaleProject />
+      <SponsorsSection />
       <MapsSection />
     </main>
   );

@@ -10,8 +10,8 @@ export default function Main() {
       <Hero />
       <PresentationSection />
       <PprincipaleProject />
-      <SponsorsSection />
       <MapsSection />
+      <SponsorsSection />
     </main>
   );
 }

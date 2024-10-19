@@ -50,7 +50,7 @@ export default function MapsSection() {
       {/* Modal for displaying the selected image */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50" onClick={closeModal}>
-          <img src={selectedImage} alt="Selected" className="max-w-full max-h-full p-5" />
+          <img src={selectedImage} alt="Selected" className="max-h-full p-5" />
         </div>
       )}
     </>

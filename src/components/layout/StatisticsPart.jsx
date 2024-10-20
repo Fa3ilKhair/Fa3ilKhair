@@ -13,10 +13,10 @@ export default function StatictPart() {
         <p className="text-[1rem]">{t("succeed_through_work")}</p>
       </div>
       <div className="flex flex-wrap gap-8 phone:justify-end">
-        <Statistic icon={faUserGroup} number={"2,341"} subject={t("members")} />
-        <Statistic icon={faHandsHolding} number={"39,328"} subject={t("beneficiaries")} />
+        <Statistic icon={faUserGroup} number={"2341"} subject={t("members")} />
+        <Statistic icon={faHandsHolding} number={"39328"} subject={t("beneficiaries")} />
         <Statistic icon={faCheck} number={"829"} subject={t("projects_completed")} />
-        <Statistic icon={faCoins} number={"926,536"} subject={t("dhs_received")} />
+        <Statistic icon={faCoins} number={"926536"} subject={t("dhs_received")} />
       </div>
     </div>
   );

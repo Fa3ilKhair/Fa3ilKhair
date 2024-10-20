@@ -3,6 +3,7 @@ import SponsorsSection from "./sponsorsSection";
 import Hero from "./Hero";
 import PprincipaleProject from "./PprincipaleProject";
 import MapsSection from "./MapsSection";
+import DernierProjets from "./DernierProjets";
 
 export default function Main() {
   return (
@@ -12,6 +13,7 @@ export default function Main() {
       <PprincipaleProject />
       <MapsSection />
       <SponsorsSection />
+      <DernierProjets/>
     </main>
   );
 }

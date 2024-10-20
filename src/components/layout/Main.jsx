@@ -13,9 +13,9 @@ export default function Main() {
       <PresentationSection />
       <PprincipaleProject />
       <MapsSection />
-      <SponsorsSection />
       <StatictPart/>
       <DernierProjets/>
+      <SponsorsSection />
     </main>
   );
 }

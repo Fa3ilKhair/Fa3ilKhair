@@ -27,7 +27,6 @@ export default function Nav() {
         quiSommesNous.scrollIntoView({ behavior: "smooth" });
       }
     } else if (page === t("home")) {
-
     } else {
       setActivePage(page);
       toggleMenu();
@@ -105,7 +104,7 @@ export default function Nav() {
           </li>
         </ul>
       </div>
-
+      {/* desktop version */}
       <ul className="flex items-center gap-10 phone:hidden">
         <li>
           <Tag

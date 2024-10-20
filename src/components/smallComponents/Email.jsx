@@ -1,7 +1,10 @@
 import { faEnvelope, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 import Icon from "./Icon";
 
 export default function Email() {
+  const { t } = useTranslation();
+
   return (
     <div className="w-96">
       <div className="relative mb-2">
@@ -12,7 +15,7 @@ export default function Email() {
           type="email"
           id="email"
           className="outline-none block w-full p-4 ps-10 text-[1rem] text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-[#367e38] focus:border-[#367e38]"
-          placeholder="E-mail"
+          placeholder={t("email_placeholder")}
           required
         />
         <button
@@ -23,7 +26,7 @@ export default function Email() {
         </button>
       </div>
       <p>
-        Restez informé de nos nouvelles activités ! <br /> Et ne manquez aucun événement !
+        {t("stay_informed")} <br /> {t("dont_miss_events")}
       </p>
     </div>
   );

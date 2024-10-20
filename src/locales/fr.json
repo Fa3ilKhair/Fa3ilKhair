@@ -34,5 +34,21 @@
   "latest_projects_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit, diam vitae consequat porta, quam quam quam quam ante euismod tellus, vitae consequat metus ante vel nibh",
   "project1_desc": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise.",
   "project2_desc": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise.",
-  "project3_desc": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise."
+  "project3_desc": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise.",
+  "support_change": "Soutenez le changement,",
+  "offer_hope": "offrez de l'espoir",
+  "copyright": "Copyright © 2024 Fail Khair.",
+  "all_rights_reserved": "Tous droits réservés.",
+  "information": "Information",
+  "email": "E-mail",
+  "phone": "Téléphone",
+  "address": "Adresse",
+  "rib": "RIB",
+  "swift_code": "Code Swift",
+  "rib_copied": "RIB copié dans le presse-papiers !",
+  "swift_code_copied": "Code Swift copié dans le presse-papiers !",
+  "stay_updated": "Restez à jour",
+  "email_placeholder": "E-mail",
+  "stay_informed": "Restez informé de nos nouvelles activités !",
+  "dont_miss_events": "Et ne manquez aucun événement !"
 }

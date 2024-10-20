@@ -3,7 +3,6 @@ import NotFoundPage from "../pages/NotFoundPage";
 import { createBrowserRouter } from "react-router-dom";
 import MaintenancePage from "../pages/MaintenancePage";
 
-// Define the routes
 const router = createBrowserRouter([
   {
     path: "/Fa3ilKhair",

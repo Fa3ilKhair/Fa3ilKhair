@@ -1,6 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector"; // Optional: for automatic language detection
+import LanguageDetector from "i18next-browser-languagedetector"; //automatic language detection
 import translationFR from "./locales/fr.json";
 import translationAR from "./locales/ar.json";
 
@@ -14,8 +14,9 @@ const resources = {
   },
 };
 
+
 i18n
-  .use(LanguageDetector) // Optional: detect language automatically
+  .use(LanguageDetector) // detect language automatically
   .use(initReactI18next) // Passes i18n instance to react-i18next
   .init({
     resources,

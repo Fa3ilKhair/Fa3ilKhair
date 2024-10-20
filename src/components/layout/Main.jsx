@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import PprincipaleProject from "./PprincipaleProject";
 import MapsSection from "./MapsSection";
 import DernierProjets from "./DernierProjets";
+import StatictPart from "./StatisticsPart";
 
 export default function Main() {
   return (
@@ -13,6 +14,7 @@ export default function Main() {
       <PprincipaleProject />
       <MapsSection />
       <SponsorsSection />
+      <StatictPart/>
       <DernierProjets/>
     </main>
   );

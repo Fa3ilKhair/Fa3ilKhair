@@ -1,37 +1,22 @@
 import { faGift, faHandshakeAngle, faOilWell } from "@fortawesome/free-solid-svg-icons";
 import ActionCard from "../smallComponents/ActionCard";
+import { useTranslation } from "react-i18next";
 
 export default function PprincipaleProject() {
+  const { t, i18n } = useTranslation();
+
   return (
-    <section className="flex flex-col items-center py-12">
+    <section className="flex flex-col items-center py-24 mb-12">
       <h1 className="text-[3rem] font-extrabold text-center leading-[3rem]">
-        Découvrez nos trois action
+        {t("discover_actions")}
         <br />
-        pour changer des vies
+        {t("change_lives")}
       </h1>
-      <p className="mt-5">Quelles sont nos trois actions principales ?</p>
+      <p className="mt-5">{t("what_are_actions")}</p>
       <div className="flex justify-evenly mt-24 w-full phone:flex-col phone:items-center phone:gap-12">
-        <ActionCard
-          title={"Projet de Forage de puits"}
-          content={
-            "Nous réalisons des forages pour offrir un accès à l'eau potable aux communautés défavorisées, améliorant ainsi leur vie quotidienne."
-          }
-          icon={faOilWell}
-        />
-        <ActionCard
-          title={"Projets à Aid Adha"}
-          content={
-            "Nous soutenons les familles pour acheter des moutons et offrons des vêtements aux enfants, apportant joie et espoir durant Aid Adha."
-          }
-          icon={faGift}
-        />
-        <ActionCard
-          title={"Tremblement d'Al Haouz"}
-          content={
-            "Nous mobilisons des ressources pour soutenir les victimes du tremblement de terre d'Al Haouz, leur apportant réconfort et assistance."
-          }
-          icon={faHandshakeAngle}
-        />
+        <ActionCard title={t("well_drilling_project")} content={t("well_drilling_content")} icon={faOilWell} />
+        <ActionCard title={t("aid_adha_projects")} content={t("aid_adha_content")} icon={faGift} />
+        <ActionCard title={t("al_haouz_earthquake")} content={t("al_haouz_content")} icon={faHandshakeAngle} />
       </div>
     </section>
   );

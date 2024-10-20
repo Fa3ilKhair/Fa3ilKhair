@@ -56,7 +56,7 @@ export default function Nav() {
               FR
             </button>
             <button onClick={() => changeLanguage("ar")} className="px-2 py-1 border rounded hover:bg-gray-200">
-              AR
+              عربية
             </button>
           </div>
           <li>

@@ -10,11 +10,11 @@ export default function Main() {
   return (
     <main className="w-full">
       <Hero />
-      <PresentationSection />
       <PprincipaleProject />
+      <StatictPart />
+      <PresentationSection />
       <MapsSection />
-      <StatictPart/>
-      <DernierProjets/>
+      <DernierProjets />
       <SponsorsSection />
     </main>
   );

@@ -45,7 +45,7 @@ export default function MapsSection() {
           {selectedLocation.description[i18n.language] ? (
             <p>{i18n.language === "ar" ? selectedLocation.description.ar : selectedLocation.description.fr}</p>
           ) : (
-            <div className="w-full h-48 flex justify-center items-center">
+            <div className="w-full h-96 flex justify-center items-center">
               <div className="loader">
                 <div className="bar"></div>
                 <div className="bar"></div>
@@ -74,40 +74,6 @@ export default function MapsSection() {
           <img src={selectedImage} alt="Selected" className="max-h-full p-5" />
         </div>
       )}
-
-      {/* CSS for loader animation */}
-      <style jsx>{`
-        .loader {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 5px;
-        }
-        .bar {
-          width: 20px;
-          height: 20px;
-          background-color: grey;
-          animation: loading 1s infinite;
-        }
-        .bar:nth-child(1) {
-          animation-delay: 0s;
-        }
-        .bar:nth-child(2) {
-          animation-delay: 0.2s;
-        }
-        .bar:nth-child(3) {
-          animation-delay: 0.4s;
-        }
-        @keyframes loading {
-          0%,
-          100% {
-            transform: scaleY(1);
-          }
-          50% {
-            transform: scaleY(1.5);
-          }
-        }
-      `}</style>
     </>
   );
 }
